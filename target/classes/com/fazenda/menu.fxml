@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fazenda.MenuController">
+   <children>
+      <Text layoutX="274.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Button layoutX="42.0" layoutY="196.0" mnemonicParsing="false" onAction="#mudarProducao" text="Produção" />
+      <Button layoutX="28.0" layoutY="155.0" mnemonicParsing="false" onAction="#mudarCadastrarVaca" text="Cadastrar Vaca" />
+      <Button layoutX="21.0" layoutY="117.0" mnemonicParsing="false" onAction="#mudarCadastrarUsuario" text="Cadastrar Usuário" />
+      <Button layoutX="189.0" layoutY="155.0" mnemonicParsing="false" onAction="#mudarExcluirUsuario" text="Excluir Usuário" />
+      <Button layoutX="313.0" layoutY="117.0" mnemonicParsing="false" onAction="#mudarModificarVaca" text="Modificar Vaca" />
+      <Button layoutX="306.0" layoutY="155.0" mnemonicParsing="false" onAction="#mudarModificarUsuario" text="Modificar Usuário" />
+      <Button layoutX="196.0" layoutY="117.0" mnemonicParsing="false" onAction="#mudarExcluirVaca" text="Excluir Vaca" />
+      <Button layoutX="478.0" layoutY="117.0" mnemonicParsing="false" onAction="#mudarConsultar" text="Consultar" />
+      <Button layoutX="461.0" layoutY="155.0" mnemonicParsing="false" onAction="#mudarProducaoDiaria" text="Produção Diaria" />
+      <Button layoutX="457.0" layoutY="196.0" mnemonicParsing="false" onAction="#mudarProducaoMensal" text="Produção Mensal" />
+      <Button layoutX="453.0" layoutY="231.0" mnemonicParsing="false" onAction="#mudarProducaoPorVaca" text="Produção Por Vaca" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#mudarLogin" text="Sair" />
+      <Text layoutX="50.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastros" />
+      <Text layoutX="208.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exclusões" />
+      <Text layoutX="325.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alterar Dados" />
+      <Text layoutX="459.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Consultar Produção" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fazenda.ProducaoMensalController">
+   <children>
+      <Text layoutX="254.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Produção Mensal" />
+      <Button layoutX="20.0" layoutY="10.0" mnemonicParsing="false" onAction="#retornarParaMenu" text="Menu" />
+      <Button layoutX="420.0" layoutY="90.0" mnemonicParsing="false" onAction="#producaoMensal" text="Selecionar" />
+      <TableView fx:id="tableProducoes" layoutX="200.0" layoutY="155.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="vacas" prefWidth="75.0" text="Vacas" />
+          <TableColumn fx:id="datas" prefWidth="75.0" text="Datas" />
+            <TableColumn fx:id="quantidades" prefWidth="75.0" text="Quantidades" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="comboMeses" layoutX="225.0" layoutY="89.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

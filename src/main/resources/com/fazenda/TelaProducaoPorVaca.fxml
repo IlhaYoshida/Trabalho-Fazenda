@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fazenda.ProducaoPorVacaController">
+   <children>
+      <Text layoutX="250.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Produçao Por Vaca" />
+      <Button layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#retornarParaMenu" text="Menu" />
+      <ComboBox fx:id="comboVacas" layoutX="225.0" layoutY="74.0" prefWidth="150.0" promptText="Vacas" />
+      <ComboBox fx:id="comboMes" layoutX="225.0" layoutY="116.0" prefWidth="150.0" promptText="Meses" />
+      <TableView fx:id="tableProducao" layoutX="200.0" layoutY="161.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="datas" prefWidth="75.0" text="Datas" />
+          <TableColumn fx:id="quantidades" prefWidth="75.0" text="Quantidades" />
+        </columns>
+      </TableView>
+      <Button layoutX="408.0" layoutY="87.0" mnemonicParsing="false" onAction="#producaoPorVaca" text="Selecionar" />
+      <Label fx:id="quantidadeTotal" layoutX="433.0" layoutY="243.0" text="Quantidade Total" />
+   </children>
+</AnchorPane>

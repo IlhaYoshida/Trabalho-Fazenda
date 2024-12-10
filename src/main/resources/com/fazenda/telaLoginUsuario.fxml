@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fazenda.telaLoginUsuarioController">
+   <children>
+      <Text layoutX="242.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastrar Usuário" />
+      <Text layoutX="159.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" />
+      <Text layoutX="159.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha" />
+      <Text layoutX="159.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" />
+      <TextField fx:id="definirLogin" layoutX="225.0" layoutY="108.0" />
+      <TextField fx:id="definirSenha" layoutX="225.0" layoutY="150.0" />
+      <TextField fx:id="definirNome" layoutX="225.0" layoutY="195.0" />
+      <Button layoutX="216.0" layoutY="318.0" mnemonicParsing="false" onAction="#limparCampos" text="Cancelar" />
+      <Button layoutX="336.0" layoutY="318.0" mnemonicParsing="false" onAction="#cadastrarUsuario" text="Cadastrar" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#voltarParaOMenu" text="Menu" />
+   </children>
+</AnchorPane>
